@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p>Formulários</p>
+        <p>
+            <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+        </p>
+        <p>
+            <label for="check">CheckBox</label>
+            <input type="checkbox" id="check" name="check" value="sim">
+            
+        </p>
+        <p>
+            <label for="homem">Radio</label> <br>
+            <input type="radio" id="sim" name="genero" value="sim">
+            <label for="sim">Sim</label> <br>
+            <input type="radio" id="nao" name="genero" value="nao">
+            <label for="sim">Não</label> <br>
+            
+        </p>
+        <p>
+            <label for="data">Data</label><br>
+            <input type="date" id="data" name="data" value="2022-04-21">
+        </p>
+        <p>
+            <label for="time">Time</label><br>
+            <input type="time" id="time" name="time">
+        </p>
+        <p>
+            <label for="color">Cor</label><br>
+            <input type="color" id="color" name="color" value="#003d66">
+        </p>
+        <p>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" placeholder="Seu E-mail">
+        </p>
+        <p>
+            <label for="foto">Foto</label><br>
+            <input type="file" id="foto" name="foto" accept=".png">
+        </p>
+        <p>
+            <label for="number">Número</label><br>
+            <input type="number" id="number" name="numero" min="5" max="30">
+        </p>
+        <p>
+            <label for="senha">Senha</label><br>
+            <input type="password" id="senha" name="senha" placeholder="Sua senha">
+        </p>
+        <p>
+            <label for="range">Range</label><br>
+            <input type="range" id="range" name="range" min="4">
+        </p>
+        <p>
+            <label for="url">Url</label><br>
+            <input type="url" id="url" name="url" placeholder="URL">
+        </p>
+        <p>
+            <label for="search">Search</label><br>
+            <input type="search" id="search" name="search" placeholder="search">
+        </p>
+        <p>
+            <label for="select">Select</label><br>
+            <select name="select" id="select">
+                <optgroup label="Até 3">
+                    <option value="valor1">valor1</option>
+                    <option value="valor2">valor2</option>
+                    <option value="valor3">valor3</option>
+                </optgroup>
+                <optgroup label="Até 6">
+                    <option value="valor4">valor4</option>
+                    <option value="valor5">valor5</option>
+                    <option value="valor6">valor6</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="area">TextArea</label><br>
+            <textarea name="area" id="area" cols="20" rows="5">
+                Teste
+            </textarea>
+        </p>
+        <p>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+    
+</body>
+</html>

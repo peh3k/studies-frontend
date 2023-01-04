@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        body div h1:hover {
+            color: rgb(255, 0, 0);
+        }
+
+        .head {
+            transition: all 1000ms ease-in-out;
+        }
+
+        a {
+            color: darkorange;
+            text-decoration: none;
+        }
+
+        a:link {
+            color: deeppink;
+        }
+
+        a:visited {
+            color: firebrick;
+        }
+
+        a:active {
+            color: blueviolet;
+        }
+
+        input:focus {
+            box-shadow: 0 0 30px rgb(54, 54, 54);
+            outline: none;
+            border: 1px solid black;
+        }
+
+        input:disabled {
+            background-color: crimson;
+        }
+
+        input:checked {
+            width: 50px;
+            height: 50px;
+        }
+
+        input:checked + h1 {
+            color: darkorange;
+        }
+
+        p:not(.paragrafo-meio) {
+            color: blue;
+        }
+
+        li:nth-child(odd) {
+            color: coral;
+        }
+
+        li::after {
+            content: '-';
+            color: blueviolet;
+        }
+        p::first-letter {
+            font-size: 50px;
+            display: block;
+            float: left;
+        }
+
+        p::first-line {
+            background-color: darkgreen;
+        }
+
+        ::placeholder {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="Nome" >
+        <input type="checkbox">
+        <h1 class="head">Lorem</h1>
+        <a href="#">Link já visitado</a> <br>
+        <a href="#">Link nunca visitado</a>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quod voluptas hic pariatur nam aliquid ipsum iure nobis, quam porro excepturi corrupti doloribus? Modi, ut odio? Id beatae dolorum dignissimos.    
+        </p>
+        <p class="paragrafo-meio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem illum accusamus debitis minima, sint, ipsa obcaecati labore harum quibusdam delectus temporibus enim vel corrupti maxime nemo dolorum perferendis vero. Magni?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi optio, ex fuga voluptatibus laudantium quam, est, neque in saepe reiciendis dolores incidunt quisquam ipsum. Earum commodi optio odit libero.</p>
+        <ul>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+    </div>
+</body>
+</html>

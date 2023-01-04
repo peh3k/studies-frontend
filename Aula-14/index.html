@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .flex-container {
+            background-color: red;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            display: flex;
+            height: 500px;
+            flex-wrap: nowrap;
+        }
+
+        .flex-item {
+            background-color: yellow;
+            width: 100%;
+            margin: 15px;
+        }
+
+        .flex-item:nth-child(2) {
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Lorem</div>
+        <div class="flex-item">Ipsum</div>
+        <div class="flex-item">Três</div>
+        <div class="flex-item">Quatro</div>
+        <div class="flex-item">Cinco</div>
+    </div>
+</body>
+</html>

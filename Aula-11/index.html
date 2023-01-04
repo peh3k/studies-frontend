@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .filha1, .filha2, .filha3 {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            margin: 10px;
+        }
+
+        .filha2 {
+            background-color: blue;
+            z-index: 2;
+            position: absolute;
+        }
+
+        .filha1 {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+        }
+
+        .filha3 {
+            background-color: chartreuse;
+            top: 15%; 
+            right: 0;
+            position: fixed;
+
+        }
+
+        .paragrafo {
+            margin-top: 1100px;
+        }
+        ul {
+            text-align: center;
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pai">
+        <div class="filha1">
+
+        </div>
+        <div class="filha2">
+
+        </div>
+    </div>
+    <div class="filha3">
+        <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+        </ul>
+    </div>
+    <div class="paragrafo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nobis dolore deleniti, animi saepe totam velit, esse commodi eligendi voluptatibus, non laborum maiores culpa explicabo sit corporis doloremque! Dignissimos, quidem.</p>
+    </div>
+    
+</body>
+</html>

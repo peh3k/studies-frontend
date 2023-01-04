@@ -1,0 +1,437 @@
+:root {
+    --primary-color: #070C10;
+    --white: #ffff;
+    --gray-white: #eeee;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+article p a {
+    color: white;
+}
+
+.main-bg {
+    background-image: url('/Landing-Page/assets/img/background.svg');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white);
+}
+
+.main-content {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.white-bg {
+    background-color: var(--white);
+}
+
+.menu-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding-right: 4rem;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+
+}
+
+.menu-bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-bar a {
+    color: #070C10;
+    text-decoration: none;
+    padding-left: 2rem;
+}
+
+
+
+.menu-bar ul li a {
+    display: block;
+    padding: 2rem;
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+
+.menu-bar ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    height: 0.2rem;
+    width: 0;
+    background-color: rgb(255, 94, 0);
+    transition: all 300ms ease-in-out;
+}
+
+.menu-bar ul li a:hover {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+
+
+}
+
+.menu-bar ul li a:hover::after {
+    width: 70%;
+    left: 20%;
+
+}
+
+.menu-content h1 {
+    transition: all 500ms ease-in-out;
+}
+
+.menu-content h1:hover {
+    -webkit-background-clip: text;
+    color: white;
+    -webkit-text-fill-color: transparent;
+    background-color: #FFF;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ea8711), to(#d96363));
+    background-image: -webkit-linear-gradient(left, #ea8711, #d96363, #73a6df, #9085fb, #52ca79);
+    background-image: -moz-linear-gradient(left, #ea8711, #d96363, #73a6df, #9085fb, #52ca79);
+    background-image: -ms-linear-gradient(left, #ea8711, #d96363, #73a6df, #9085fb, #52ca79);
+    background-image: -o-linear-gradient(left, #ea8711, #d96363, #73a6df, #9085fb, #52ca79);
+
+}
+
+header {
+    color: var(--white);
+}
+
+.header-section {
+    width: 40%;
+    display: flex;
+
+}
+
+.header-section p {
+    text-align: justify;
+}
+
+.header-section p,
+h1 {
+    display: block;
+
+}
+
+.header-section h1 {
+    margin-bottom: 5rem;
+    font-size: 4rem;
+
+
+}
+
+.intro-section {
+    margin-top: 15rem;
+    margin-left: 2rem;
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    min-height: 100vh;
+
+
+}
+
+.imagens-header {
+    width: 40%;
+    margin: 0 13rem 0 0;
+    height: auto;
+    display: flex;
+    animation-name: slidein;
+    animation-duration: 4s;
+    z-index: -1;
+
+
+
+}
+
+.imagem-css {
+    width: 40rem;
+    height: 30rem;
+    animation: float 7s ease-in-out infinite;
+    margin-right: 2rem;
+
+
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translatey(0)
+    }
+
+    50% {
+        transform: translatey(-30px)
+    }
+}
+
+@keyframes slidein {
+    from {
+        margin-right: -100rem;
+    }
+
+    to {
+        margin-right: 13rem;
+
+    }
+}
+
+.imagem-html {
+    width: 25rem;
+    height: 20rem;
+    animation: float 5s ease-in-out infinite;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-top1 {
+    margin-left: 0;
+    padding: 3rem;
+    min-height: 100vh;
+    display: flex;
+}
+
+.header-top1 {
+    color: black;
+    text-align: center;
+    margin: 4rem;
+
+}
+
+.header-top1 h1 {
+    font-size: 4.5rem;
+    display: block;
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.header-top1 h1::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 30%;
+    height: 0.2rem;
+    width: 0;
+    background-color: crimson;
+    transition: all 400ms ease-in-out;
+
+}
+
+
+.header-top1 h1:hover::after {
+    width: 16%;
+    margin-left: 26%;
+}
+
+.section-jobs {
+    min-height: 100vh;
+}
+
+.header-section-jobs {
+    padding-top: 10rem;
+    padding-left: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 10rem;
+}
+
+.header-section-jobs h1 {
+    display: block;
+    font-size: 4.5rem;
+    margin-bottom: 4rem;
+}
+
+.grid-top3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 4rem;
+    gap: 7rem;
+    text-align: left;
+    border: 2px solid rgb(49, 49, 49);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.grid-top3 h2 {
+    display: block;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.section-contact {
+    min-height: 100vh;
+}
+
+footer {
+    background-color: #ffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 900px) {
+
+    .intro-section {
+        margin-top: 30rem;
+
+    }
+
+    .imagens-header {
+        width: 40%;
+        margin-left: 10rem;
+    }
+
+    .imagem-css {
+        width: 30rem;
+        height: 20rem;
+    }
+
+    .imagem-html {
+        width: 20rem;
+        height: 10rem;
+    }
+
+    .menu-bar h1 {
+        padding-left: 2rem;
+    }
+
+    @keyframes slidein {
+        from {
+            margin-right: -100rem;
+        }
+
+        to {
+            margin-right: 5rem;
+
+        }
+    }
+
+
+
+}
+
+@media (max-width: 650px) {
+
+    .grid-top3 {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-bar {
+        bottom: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .menu-content {
+        flex-direction: column;
+    }
+
+    .menu-content ul {
+        flex-direction: column;
+        height: 50vh;
+        justify-content: center;
+    }
+
+    .menu-content h1 {
+        margin-top: 20rem;
+        padding-left: 0;
+
+    }
+
+    .menu-content h1 a {
+        padding-left: 0;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+
+    .intro-section {
+        margin: 0;
+        margin-top: 5rem;
+        padding: 4rem;
+        flex-direction: column;
+        height: 100vh;
+        background-image: url('/Landing-Page/assets/img/background.svg')
+    }
+
+    .intro-section h1 {
+        font-size: 3rem;
+    }
+
+    .header-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .imagens-header {
+        z-index: 1;
+        margin: 0;
+        width: 100%;
+        padding-bottom: 15rem;
+    }
+
+    .header-top1 h1 {
+        font-size: 3rem;
+    }
+
+    .header-section-jobs h1 {
+        font-size: 3rem;
+
+    }
+
+    .header-section-jobs {
+        text-align: center;
+        margin: 0;
+    }
+
+    .grid-top3 {
+        text-align: center;
+    }
+}
